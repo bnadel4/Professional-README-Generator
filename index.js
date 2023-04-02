@@ -1,16 +1,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 const questions = [
   {
     type: 'input',
     name: 'title',
     message: 'What is your project title?'
-  },
-  {
-    type: 'list-input',
-    name: 'contents',
-    message: 'What would you like add to table of contents?'
   },
   {
     type: 'input',
@@ -29,8 +25,8 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'contributing',
-    message: 'What would you like add to the contributing section?'
+    name: 'contribution',
+    message: 'What would you like add to the contribution section?'
   },
   {
     type: 'input',
@@ -42,9 +38,7 @@ const questions = [
 inquirer.prompt(questions)
 .then((answers) => {
   console.log('answers', answers);
-  const readme = `
-  # ${answers.title}
-  `;
+  const readme = generateMarkdown(answers);
   fs.writeFile('README.md', readme, (err) => {
     if (err) throw err;
     console.log('Answers saved to README.md');
