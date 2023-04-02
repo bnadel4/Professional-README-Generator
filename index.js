@@ -10,28 +10,33 @@ const questions = [
   },
   {
     type: 'input',
+    name: 'description',
+    message: 'What would you like to add to the description section?'
+  },
+  {
+    type: 'input',
     name: 'installation',
-    message: 'What would you like add to the installation section?'
+    message: 'What would you like to add to the installation section?'
   },
   {
     type: 'input',
     name: 'usage',
-    message: 'What would you like add to the usage section?'
+    message: 'What would you like to add to the usage section?'
   },
   {
     type: 'input',
     name: 'license',
-    message: 'What would you like add to the license section?'
+    message: 'What would you like to add to the license section?'
   },
   {
     type: 'input',
-    name: 'contribution',
-    message: 'What would you like add to the contribution section?'
+    name: 'contributing',
+    message: 'What would you like to add to the contributing section?'
   },
   {
     type: 'input',
     name: 'questions',
-    message: 'What would you like add to the questions section?'
+    message: 'What would you like to add to the questions section?'
   },
 ];
 
