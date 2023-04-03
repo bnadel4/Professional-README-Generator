@@ -24,9 +24,15 @@ const questions = [
     message: 'What would you like to add to the usage section?'
   },
   {
-    type: 'input',
+    type: 'list',
     name: 'license',
-    message: 'What would you like to add to the license section?'
+    message: 'Select the license chosen for the repo.',
+    choices: [
+      "None",
+      "Apache License 2.0",
+      "GNU General Public License v3.0",
+      "MIT License",
+    ],
   },
   {
     type: 'input',
