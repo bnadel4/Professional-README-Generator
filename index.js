@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown').default;
 
 const questions = [
   {
@@ -28,10 +28,10 @@ const questions = [
     name: 'license',
     message: 'Select the license chosen for the repo.',
     choices: [
-      "None",
-      "Apache License 2.0",
-      "GNU General Public License v3.0",
-      "MIT License",
+      'None',
+      'Apache License 2.0',
+      'GNU General Public License v3.0',
+      'MIT License',
     ],
   },
   {
@@ -48,22 +48,9 @@ const questions = [
 
 inquirer.prompt(questions)
 .then((answers) => {
-  console.log('answers', answers);
   const readme = generateMarkdown(answers);
   fs.writeFile('README.md', readme, (err) => {
     if (err) throw err;
     console.log('Answers saved to README.md');
   });
 });
-
-
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
-
