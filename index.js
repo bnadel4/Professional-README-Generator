@@ -40,6 +40,11 @@ const questions = [
     message: 'What would you like to add to the contributing section?'
   },
   {
+    type: "input",
+    message: "What would you like to add to the tests section?",
+    name: "tests",
+  },
+  {
     type: 'input',
     name: 'questions',
     message: 'What would you like to add to the questions section?'
