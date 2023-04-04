@@ -11,6 +11,7 @@ function renderLicenseBadge(license) {
 }
 
 function generateMarkdown(data) {
+  console.log('data', data);
   return ` ${renderLicenseBadge(data.license)}
   # ${data.title}
   ## Table of Contents 
@@ -39,5 +40,4 @@ function generateMarkdown(data) {
 `;
 }
 
-export default generateMarkdown;
-
+module.exports = generateMarkdown;
