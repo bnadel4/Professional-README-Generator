@@ -35,8 +35,11 @@ function generateMarkdown(data) {
     ${data.contributing}
 ## Tests
     ${data.tests}
-## Questions
-    ${data.questions}
+## Questions  
+
+
+  Send an ***[Email](${data.email})***
+  View my ***[Github Profile](https://github.com/${data.username})***
 
 `;
 }
