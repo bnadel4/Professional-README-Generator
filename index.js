@@ -40,16 +40,26 @@ const questions = [
     message: 'What would you like to add to the contributing section?'
   },
   {
+    type: "input",
+    message: "What would you like to add to the tests section?",
+    name: "tests",
+  },
+  {
     type: 'input',
-    name: 'questions',
-    message: 'What would you like to add to the questions section?'
+    name: 'username',
+    message: 'What is your github username?'
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email?'
   },
 ];
 
 inquirer.prompt(questions)
 .then((answers) => {
   const readme = generateMarkdown(answers);
-  fs.writeFile('README.md', readme, (err) => {
+  fs.writeFile('./output/README.md', readme, (err) => {
     if (err) throw err;
     console.log('Answers saved to README.md');
   });
