@@ -1,29 +1,35 @@
- [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  # 123
-  ## Table of Contents 
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
+ # Professional README Generator
 
 ## Description
-    123
-## Installation 
-    123
+
+An open source command line application that accepts user input to generate professional README files. 
+
+## Table of Contents (Optional)
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+
+Clone the repo to your local system.
+
 ## Usage
-    12
+
+[Video Demo](https://drive.google.com/file/d/1st_alocFe6876G0LlSIncq4ZL5Tv6BYI/view)
+
+
+![command line demo](./images/commandlineDEMO.png)
+
+
+![sample README](./images/sampleREADMEdemo.png)
+
+## Credits
+
+[https://opensource.org/licenses/](https://opensource.org/licenses/)
+
 ## License
-    Apache License 2.0
-## Contributing
-    123
-## Tests
-    123
-## Questions
-Send an ***[Email](${data.email})***
 
-  View my ***[Github Profile](https://github.com/${data.username})***
-
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
