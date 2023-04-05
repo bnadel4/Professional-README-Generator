@@ -59,7 +59,7 @@ const questions = [
 inquirer.prompt(questions)
 .then((answers) => {
   const readme = generateMarkdown(answers);
-  fs.writeFile('README.md', readme, (err) => {
+  fs.writeFile('./output/README.md', readme, (err) => {
     if (err) throw err;
     console.log('Answers saved to README.md');
   });
